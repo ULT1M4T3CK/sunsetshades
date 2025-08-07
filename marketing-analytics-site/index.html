@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Marketing Analytics Specialist | Google Tag Manager, GA4, Meta & More</title>
+    <meta name="description" content="Marketing analytics specialist focused on Google Tag Manager, GA4, Consent Mode, Meta Pixel, LinkedIn Insight Tag, and TikTok Pixel. Implementations, audits, and dashboards that drive growth and compliance." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Marketing Analytics Specialist" />
+    <meta property="og:description" content="Expert in GTM, GA4, Consent Mode v2, Meta Pixel, LinkedIn, TikTok. Accurate tracking, privacy-first." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="/assets/og-image.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Marketing Analytics Specialist" />
+    <meta name="twitter:description" content="GTM, GA4, Consent Mode v2, Meta, LinkedIn, TikTok — set up right." />
+    <meta name="twitter:image" content="/assets/og-image.svg" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      // Configure your IDs here. If you use GTM, you usually don't need GA4 gtag directly.
+      window.ANALYTICS_CONFIG = {
+        gtmId: "",              // e.g., "GTM-XXXXXXX"
+        gaMeasurementId: "",    // e.g., "G-XXXXXXX" (only if not using GTM)
+        metaPixelId: "",         // e.g., "123456789012345"
+        linkedinPartnerId: "",   // e.g., "123456"
+        tiktokPixelId: "",       // e.g., "C123ABCDEF012345678"
+        googleAdsId: ""          // e.g., "AW-123456789"
+      };
+
+      // Consent defaults per Google Consent Mode v2
+      window.DEFAULT_CONSENT = {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "granted",
+        personalization_storage: "denied",
+        security_storage: "granted"
+      };
+
+      // Data layer for GTM if used
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+
+      // Initialize consent defaults early (Google Consent Mode)
+      gtag('consent', 'default', window.DEFAULT_CONSENT);
+    </script>
+
+    <!-- Structured Data: ProfessionalService -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Marketing Analytics Specialist",
+        "url": "https://example.com",
+        "description": "Implementation and auditing of Google Tag Manager, GA4, Consent Mode v2, Meta Pixel, LinkedIn Insight Tag, TikTok Pixel.",
+        "areaServed": "Global",
+        "brand": {
+          "@type": "Brand",
+          "name": "AnalyticsPro"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/",
+          "https://twitter.com/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Home">
+        <img src="/assets/logo.svg" alt="AnalyticsPro logo" width="36" height="36" />
+        <span>AnalyticsPro</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-primary">Book a call</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Marketing analytics that powers growth — and respects privacy</h1>
+          <p>Specialist in Google Tag Manager, GA4, Consent Mode v2, Meta Pixel, LinkedIn Insight Tag, and TikTok Pixel. I implement robust, compliant tracking so you can trust your data.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get a free audit</a>
+            <a href="#services" class="btn btn-ghost">Explore services</a>
+          </div>
+          <div class="trust">
+            <span>Platforms I work with:</span>
+            <ul class="logos">
+              <li title="Google Tag Manager">GTM</li>
+              <li title="Google Analytics 4">GA4</li>
+              <li title="Meta Pixel">Meta</li>
+              <li title="LinkedIn Insight Tag">LinkedIn</li>
+              <li title="TikTok Pixel">TikTok</li>
+              <li title="Google Ads">Google Ads</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true"></div>
+      </section>
+
+      <section id="services" class="section">
+        <h2>Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Tag implementation & migration</h3>
+            <p>GTM container setup, GA4 events & conversions, Consent Mode v2, server-side tagging, and data layer design.</p>
+          </article>
+          <article class="card">
+            <h3>Audits & troubleshooting</h3>
+            <p>Fix misfires, duplicate events, attribution gaps, cross-domain tracking, and ensure deduped conversions.</p>
+          </article>
+          <article class="card">
+            <h3>Paid media tracking</h3>
+            <p>Meta Pixel CAPI readiness, LinkedIn Insight Tag, TikTok Pixel, Google Ads conversions, and enhanced conversions.</p>
+          </article>
+          <article class="card">
+            <h3>Dashboards & insights</h3>
+            <p>Looker Studio dashboards, UTM governance, channel diagnostics, and experimentation frameworks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="section alt">
+        <h2>How we work</h2>
+        <ol class="steps">
+          <li>
+            <h4>1) Discovery</h4>
+            <p>Understand your funnel, KPIs, customer journey, and current stack.</p>
+          </li>
+          <li>
+            <h4>2) Tracking plan</h4>
+            <p>Event taxonomy, parameters, consent categories, and QA checklist.</p>
+          </li>
+          <li>
+            <h4>3) Implementation</h4>
+            <p>Ship GTM tags, triggers, variables, and server-side where needed.</p>
+          </li>
+          <li>
+            <h4>4) Validation</h4>
+            <p>Test with Tag Assistant, Network logs, and sandbox conversions.</p>
+          </li>
+          <li>
+            <h4>5) Reporting</h4>
+            <p>Build Looker Studio dashboards and create decision-ready views.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="case-studies" class="section">
+        <h2>Results</h2>
+        <div class="grid-2">
+          <div>
+            <h3>+34% attributed revenue</h3>
+            <p>GA4 + Consent Mode v2 + Meta CAPI alignment reduced signal loss and improved conversion modeling.</p>
+          </div>
+          <div>
+            <h3>-47% wasted spend</h3>
+            <p>Eliminated duplicate events and tightened UTM rules, resulting in cleaner attribution and smarter bidding.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section alt">
+        <h2>Simple pricing</h2>
+        <div class="cards">
+          <article class="card pricing">
+            <h3>Audit</h3>
+            <p class="price">$1,200</p>
+            <ul>
+              <li>GTM/GA4 audit</li>
+              <li>Consent Mode check</li>
+              <li>Tag fixes roadmap</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Start audit</a>
+          </article>
+          <article class="card pricing">
+            <h3>Implementation</h3>
+            <p class="price">From $3,500</p>
+            <ul>
+              <li>Full tracking plan</li>
+              <li>GTM + media pixels</li>
+              <li>QA + documentation</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get a quote</a>
+          </article>
+          <article class="card pricing">
+            <h3>Ongoing</h3>
+            <p class="price">$1,500/mo</p>
+            <ul>
+              <li>Monthly QA & fixes</li>
+              <li>Experimentation</li>
+              <li>Stakeholder reporting</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book a call</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Book a call</h2>
+        <p>I offer a free 30-minute consultation to review your tracking and identify quick wins.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@example.com?subject=Analytics%20Consultation">Email me</a>
+          <a class="btn btn-ghost" href="#" data-calendly>Schedule via Calendly</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <span>© <span id="year"></span> AnalyticsPro</span>
+        <a href="#" id="open-preferences">Privacy & tracking preferences</a>
+      </div>
+      <div class="footer-right">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <!-- Consent Banner -->
+    <div id="consent-banner" class="consent hidden" role="dialog" aria-modal="true" aria-labelledby="consent-title">
+      <div class="consent-inner">
+        <h3 id="consent-title">We use cookies and tags</h3>
+        <p>We use analytics and advertising tags to improve your experience and measure performance. You can accept, reject, or customize.</p>
+        <div class="consent-actions">
+          <button id="consent-reject" class="btn">Reject all</button>
+          <button id="consent-customize" class="btn">Customize</button>
+          <button id="consent-accept" class="btn btn-primary">Accept all</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preferences Modal -->
+    <div id="preferences-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="preferences-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="preferences-title">Privacy & tracking preferences</h3>
+          <button id="preferences-close" aria-label="Close">✕</button>
+        </div>
+        <form id="preferences-form">
+          <fieldset>
+            <legend>Categories</legend>
+            <label class="switch">
+              <input type="checkbox" checked disabled />
+              <span>Necessary</span>
+            </label>
+            <label class="switch">
+              <input id="pref-analytics" type="checkbox" />
+              <span>Analytics</span>
+            </label>
+            <label class="switch">
+              <input id="pref-ads" type="checkbox" />
+              <span>Advertising</span>
+            </label>
+          </fieldset>
+          <div class="modal-actions">
+            <button type="button" id="preferences-save" class="btn btn-primary">Save preferences</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Tag Noscript fallbacks -->
+    <noscript>
+      <!-- GTM noscript (if you add a GTM id) -->
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <!-- Meta Pixel noscript (if you add a pixel id) -->
+      <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
